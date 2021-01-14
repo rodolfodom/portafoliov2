@@ -1,14 +1,14 @@
-<svg width="746" height="624" viewBox="0 0 746 624" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect x="179" width="530.777" height="378.239" fill="url(#pattern0)"/>
-<rect x="287.949" y="351.691" width="457.532" height="272.015" fill="url(#pattern1)"/>
-<rect x="598.601" y="212.838" width="110.399" height="132.024" fill="url(#pattern2)"/>
-<rect y="206.009" width="399.486" height="417.697" fill="url(#pattern3)"/>
+<svg width="807" height="675" viewBox="0 0 807 675" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="193.816" width="574.429" height="409.346" fill="url(#pattern0)"/>
+<rect x="311.725" y="380.614" width="495.159" height="294.386" fill="url(#pattern1)"/>
+<rect x="647.925" y="230.342" width="119.479" height="142.882" fill="url(#pattern2)"/>
+<rect x="0.0952148" y="222.951" width="432.341" height="452.049" fill="url(#pattern3)"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="translate(0.0832668) scale(0.00104183 0.00146199)"/>
 </pattern>
 <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image1" transform="translate(0.0186013) scale(0.0012035 0.00202429)"/>
+<use xlink:href="#image1" transform="translate(0.0186012) scale(0.0012035 0.00202429)"/>
 </pattern>
 <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image2" transform="translate(0.171134) scale(0.00149485 0.00125)"/>
