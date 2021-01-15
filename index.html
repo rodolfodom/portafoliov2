@@ -49,72 +49,87 @@
                     <hgroup>
                         <h2>Hola, soy </h2>
                         <h1>Rodolfo<br>Domínguez</h1><br><br>
-                        <h2>Bienvenid@ a mi sitio</h2>
+                        <h3>Bienvenid@ a mi sitio</h3>
                     </hgroup>
                     <div class="hero-btns-container">
-                        <button class="btn primary shadow-1">Contactame</button>
-                        <button class="btn secundary shadow-1">Descarga mi cv</button>
+                        <button class="btn primary shadow-1">Contáctame</button>
+                        <button class="btn secundary shadow-1">Ver mi CV</button>
                     </div>
                 </div>
             </aside>
         </article>
     </section>
     <div class="container">
-        <section id="misProyectos" class="section projects">
+        <section id="proyectos" class="section projects">
             <div class="title">
-                <h2>pProyectos</h2>
+                <h2>Proyectos</h2>
+            </div>
+            <div class="projects-container">
+                <template id="project-template">
+                    <article>
+                        <aside class="hidden">
+                            <div>
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </aside>
+                    </article>
+                </template>
             </div>
         </section>
         <section id="habilidades" class="section skills">
             <div class="title">
                 <h2>Habilidades</h2>
             </div>
-            <article class="skills">
-                <figure class="skill">
-                    <div>
-                        <img src="./assets/icons/html.svg" alt="">
-                    </div>
-                    <figcaption>HTML</figcaption>
-                </figure>
-                <figure class="skill">
-                    <div>
-                        <img src="./assets/icons/css.svg" alt="">
-                    </div>
-                    <figcaption>CSS</figcaption>
-                </figure>
-                <figure class="skill">
-                    <div>
-                        <img src="./assets/icons/JS.svg" alt="">
-                    </div>
-                    <figcaption>
-                        JavaScript
-                    </figcaption>
-                </figure>
-                <figure class="skill">
-                    <div>
-                        <img src="./assets/icons/sass.svg" alt="">
-                    </div>
-                    <figcaption>
-                        SASS
-                    </figcaption>
-                </figure>
-                <figure class="skill">
-                    <div>
-                        <img src="./assets/icons/git.svg" alt="">
-                    </div>
-                    <figcaption>
-                        Git
-                    </figcaption>
-                </figure>
-                <figure class="skill">
-                    <div>
-                        <img src="./assets/icons/figma.svg" alt="">
-                    </div>
-                    <figcaption>
-                        Figma
-                    </figcaption>
-                </figure>
-            </article>
+            <div class="content">
+                <article class="skills">
+                    <figure class="skill">
+                        <div>
+                            <img src="./assets/icons/html.svg" alt="">
+                        </div>
+                        <figcaption>HTML</figcaption>
+                    </figure>
+                    <figure class="skill">
+                        <div>
+                            <img src="./assets/icons/css.svg" alt="">
+                        </div>
+                        <figcaption>CSS</figcaption>
+                    </figure>
+                    <figure class="skill">
+                        <div>
+                            <img src="./assets/icons/JS.svg" alt="">
+                        </div>
+                        <figcaption>
+                            JavaScript
+                        </figcaption>
+                    </figure>
+                    <figure class="skill">
+                        <div>
+                            <img src="./assets/icons/sass.svg" alt="">
+                        </div>
+                        <figcaption>
+                            SASS
+                        </figcaption>
+                    </figure>
+                    <figure class="skill">
+                        <div>
+                            <img src="./assets/icons/git.svg" alt="">
+                        </div>
+                        <figcaption>
+                            Git
+                        </figcaption>
+                    </figure>
+                    <figure class="skill">
+                        <div>
+                            <img src="./assets/icons/figma.svg" alt="">
+                        </div>
+                        <figcaption>
+                            Figma
+                        </figcaption>
+                    </figure>
+                </article>
+                <img src="./assets/img/skill.svg" alt="">
+            </div>
         </section>
         <section id="miEducacion" class="section education">
             <div class="title">
@@ -146,7 +161,7 @@
                         <img src="./assets/img/logoUNAM.png" alt="">
                     </div>
                     <figcaption class="glass shadow-1">
-                        <h4>Universidad Nacional Autónoma de México</h4>
+                        <h4>Universidad Nacional<br>Autónoma de México</h4>
                         <p><i>Ingeniería en computación</i></p>
                         <small>Octubre 2020 - Presente</small>
                     </figcaption>
@@ -176,7 +191,7 @@
         </section>
         <section id="contactame" class="section contact">
             <div class="title">
-                <h2>Contactame</h2>
+                <h2>Contáctame</h2>
             </div>
             <p>
                 ¿Quiéres digitalizar tu negocio, necesitas una página web para tu proyecto personal o estás buscando un
@@ -186,20 +201,23 @@
             <h2>Yo te puedo ayudar</h2>
             <h4>Déjame tus datos...</h4>
             <form id="contact-form" class="form">
-                <label for="name" class="label">Nombre:</label>
+                <label for="name" class="label"><mark>*</mark>Nombre:</label>
                 <input class="input form-element border-radius-1 width-100" type="text" name="name" required
                     placeholder="¿Cómo te dicen tus amigos?">
-                <label for="email" class="label">Correo electrónico:</label>
+                <label for="email" class="label"><mark>*</mark>Correo electrónico:</label>
                 <input class="input form-element border-radius-1 width-100" type="email" name="email" required
                     placeholder="Prometo no enviarte spam">
                 <label for="subject" class="label">Asunto:</label>
                 <input class="input form-element border-radius-1 width-100" type="text" name="subject"
                     placeholder="¿En qué puedo ayudarte?">
-                <label for="subject" class="label">Comentarios:</label>
+                <label for="subject" class="label"><mark>*</mark>Comentarios:</label>
                 <textarea class="textarea form-element border-radius-1 width-100" name="comments" required
                     placeholder="Interesante... cuéntame más."></textarea>
-                <input class="btn primary" type="submit" value="Envíar">
+                <br>
+                <label><mark>*</mark>Campo requerido</label>
+                <input class="btn primary shadow-1" type="submit" value="Envíar">
             </form>
+            <img src="./assets/img/formImg.svg" alt="">
         </section>
         <section id="redesSociales" class="section socialMedia">
             <div class="title">
@@ -227,7 +245,7 @@
                 <figure>
                     <img src="./assets/icons/location.png" alt="">
                     <figcaption>
-                        <p>Ciudad de méxico,<br>México</p>
+                        <p>Ciudad de México,<br>México</p>
                     </figcaption>
                 </figure>
             </article>
