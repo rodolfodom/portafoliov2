@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rodolfo Domínguez</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
@@ -19,11 +19,11 @@
             <nav class="menu">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#misProyectos">Mis proyectos</a></li>
+                    <li><a href="#proyectos">Mis proyectos</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#miEducación">Mí educación</a></li>
-                    <li><a href="#acercadDeMi">Acerca de mí</a></li>
-                    <li><a href="#contactame">Contactame</a></li>
+                    <li><a href="#educacion">Educación</a></li>
+                    <li><a href="#acerca">Acerca de mí</a></li>
+                    <li><a href="#contactame">Contáctame</a></li>
                     <li><a href="#redesSociales">Redes sociales</a></li>
                 </ul>
             </nav>
@@ -62,7 +62,7 @@
     <div class="container">
         <section id="proyectos" class="section projects">
             <div class="title">
-                <h2>Proyectos</h2>
+                <h2>Mis proyectos</h2>
             </div>
             <div class="projects-container">
                 <template id="project-template">
@@ -131,7 +131,7 @@
                 <img src="./assets/img/skill.svg" alt="">
             </div>
         </section>
-        <section id="miEducacion" class="section education">
+        <section id="educacion" class="section education">
             <div class="title">
                 <h2>Educación</h2>
             </div>
@@ -168,7 +168,7 @@
                 </figure>
             </article>
         </section>
-        <section id="acercaDeMi" class="section about">
+        <section id="acerca" class="section about">
             <div class="title">
                 <h2>Acerca de mí</h2>
             </div>
@@ -200,24 +200,26 @@
             </p>
             <h2>Yo te puedo ayudar</h2>
             <h4>Déjame tus datos...</h4>
-            <form id="contact-form" class="form">
-                <label for="name" class="label"><mark>*</mark>Nombre:</label>
-                <input class="input form-element border-radius-1 width-100" type="text" name="name" required
-                    placeholder="¿Cómo te dicen tus amigos?">
-                <label for="email" class="label"><mark>*</mark>Correo electrónico:</label>
-                <input class="input form-element border-radius-1 width-100" type="email" name="email" required
-                    placeholder="Prometo no enviarte spam">
-                <label for="subject" class="label">Asunto:</label>
-                <input class="input form-element border-radius-1 width-100" type="text" name="subject"
-                    placeholder="¿En qué puedo ayudarte?">
-                <label for="subject" class="label"><mark>*</mark>Comentarios:</label>
-                <textarea class="textarea form-element border-radius-1 width-100" name="comments" required
-                    placeholder="Interesante... cuéntame más."></textarea>
-                <br>
-                <label><mark>*</mark>Campo requerido</label>
-                <input class="btn primary shadow-1" type="submit" value="Envíar">
-            </form>
-            <img src="./assets/img/formImg.svg" alt="">
+            <div class="content">
+                <form id="contact-form" class="form">
+                    <label for="name" class="label"><mark>*</mark>Nombre:</label>
+                    <input class="input form-element border-radius-1 width-100" type="text" name="name" required
+                        placeholder="¿Cómo te dicen tus amigos?">
+                    <label for="email" class="label"><mark>*</mark>Correo electrónico:</label>
+                    <input class="input form-element border-radius-1 width-100" type="email" name="email" required
+                        placeholder="Prometo no enviarte spam">
+                    <label for="subject" class="label">Asunto:</label>
+                    <input class="input form-element border-radius-1 width-100" type="text" name="subject"
+                        placeholder="¿En qué puedo ayudarte?">
+                    <label for="subject" class="label"><mark>*</mark>Comentarios:</label>
+                    <textarea class="textarea form-element border-radius-1 width-100" name="comments" required
+                        placeholder="Interesante... cuéntame más."></textarea>
+                    <br>
+                    <label><mark>*</mark>Campo requerido</label>
+                    <input style="margin: 0;" class="btn primary shadow-1" type="submit" value="Envíar">
+                </form>
+                <img src="./assets/img/formImg.svg" alt="">
+            </div>
         </section>
         <section id="redesSociales" class="section socialMedia">
             <div class="title">
