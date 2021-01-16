@@ -438,6 +438,7 @@ small {
 .hidden {
   opacity: 0;
   visibility: hidden;
+  transition: opacity 0.5s ease;
 }
 
 /* ***************** Site style ****************** */
@@ -506,7 +507,7 @@ small {
   }
 }
 
-/* *** projects sections *** */
+/* *** projects section *** */
 
 .projects-container {
   display: grid;
@@ -520,6 +521,8 @@ small {
   max-height: 792px;
   background-size: cover;
   border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .projects-container aside {
@@ -527,6 +530,11 @@ small {
   height: 100%;
   border-radius: 8px;
   padding: 1rem;
+  transition: all 0.5s ease;
+}
+
+.projects-container article:hover {
+  transform: scale(1.02);
 }
 
 .projects-container div {
