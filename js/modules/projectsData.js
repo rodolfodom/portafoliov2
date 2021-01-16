@@ -1,11 +1,11 @@
 export const PROJECTS = [
   {
     name: "Project1",
-    mainImg: "../assets/img/project1.jpg",
+    mainImg: "./assets/img/project1.jpg",
     images: [
-      "../assets/img/project1.jpg",
-      "../assets/img/project1_2.jpg",
-      "../assets/img/project1_3.jpg",
+      "./assets/img/project1.jpg",
+      "./assets/img/project1_2.jpg",
+      "./assets/img/project1_3.jpg",
     ],
     shortDescription:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
@@ -19,11 +19,11 @@ export const PROJECTS = [
   },
   {
     name: "Project2",
-    mainImg: "../assets/img/project2.jpg",
+    mainImg: "./assets/img/project2.jpg",
     images: [
-      "../assets/img/project2.jpg",
-      "../assets/img/project2_2.jpg",
-      "../assets/img/project2_3.jpg",
+      "./assets/img/project2.jpg",
+      "./assets/img/project2_2.jpg",
+      "./assets/img/project2_3.jpg",
     ],
     shortDescription:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
