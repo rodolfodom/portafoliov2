@@ -159,6 +159,16 @@ small {
   box-shadow: none;
   opacity: 0.8;
 }
+
+.headerLogo {
+  transition: opacity 0.3s ease;
+}
+
+.headerLogo:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
 .primary {
   color: var(--second-color);
   background-color: var(--first-color);
