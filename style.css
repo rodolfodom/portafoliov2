@@ -219,6 +219,9 @@ small {
   background-position-y: center;
   background-position-x: right;
   background-size: 120% auto;
+  -moz-background-size: 120% auto;
+  -webkit-background-size: 120% auto;
+  -o-background-size: 120% auto;
   background-attachment: fixed;
 }
 
