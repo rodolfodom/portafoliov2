@@ -153,9 +153,14 @@ small {
   font-family: var(--font);
   position: relative;
   display: block;
+  transition: transform 0.5s ease;
 }
 
 .btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:active {
   box-shadow: none;
   opacity: 0.8;
 }
@@ -520,6 +525,8 @@ small {
   height: 66vw;
   max-height: 792px;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -538,15 +545,25 @@ small {
 }
 
 .projects-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid var(--white-color);
   height: 100%;
   padding: 0.5rem;
+  overflow-y: hidden;
 }
 
-.projects-container h4,
+.projects-container h3,
 .projects-container p {
   color: var(--white-color);
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-container div {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -863,10 +880,18 @@ label mark {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: transform 0.5s ease;
+  cursor: pointer;
 }
-.social-media p {
+
+.social-media figure:hover {
+  transform: scale(1.05);
+}
+
+.social-media figcaption {
   font-weight: bold;
   text-align: center;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -878,7 +903,7 @@ label mark {
     width: 9rem;
   }
 
-  .social-media p {
+  .social-media figcaption {
     font-size: 1.4rem;
   }
 }
