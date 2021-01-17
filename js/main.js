@@ -1,3 +1,4 @@
+import { formValidation } from "./modules/form.js";
 import { logoToHome } from "./modules/headerLogo.js";
 import { heroBtnsRoutes } from "./modules/heroBtns.js";
 import { menu } from "./modules/menu.js";
@@ -11,5 +12,6 @@ d.addEventListener("DOMContentLoaded", (e) => {
   heroBtnsRoutes();
   logoToHome();
   renderProjects();
+  formValidation();
   setTimeout(showProjectDescription, 300);
 });

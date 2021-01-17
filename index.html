@@ -204,19 +204,26 @@
                 <form id="contact-form" class="form">
                     <label for="name" class="label"><mark>*</mark>Nombre:</label>
                     <input class="input form-element border-radius-1 width-100" type="text" name="name" required
-                        placeholder="¿Cómo te dicen tus amigos?">
+                        placeholder="¿Cómo te dicen tus amigos?" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                        title="El nombre ingresado no es válido">
+                    <label id="name-error" class="form-error"></label>
                     <label for="email" class="label"><mark>*</mark>Correo electrónico:</label>
                     <input class="input form-element border-radius-1 width-100" type="email" name="email" required
-                        placeholder="Prometo no enviarte spam">
+                        placeholder="Prometo no enviarte spam"
+                        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                        title="El e-mail ingresado no es válido">
+                    <label id="mail-error" class="form-error"></label>
                     <label for="subject" class="label">Asunto:</label>
                     <input class="input form-element border-radius-1 width-100" type="text" name="subject"
                         placeholder="¿En qué puedo ayudarte?">
                     <label for="subject" class="label"><mark>*</mark>Comentarios:</label>
                     <textarea class="textarea form-element border-radius-1 width-100" name="comments" required
-                        placeholder="Interesante... cuéntame más."></textarea>
+                        placeholder="Interesante... cuéntame más.(máximo 250 caractéres)" data-pattern="^.{1,255}$"
+                        title="Excediste el máximo de caractéres"></textarea>
+                    <label id="comments-error" class="form-error"></label>
                     <br>
                     <label><mark>*</mark>Campo requerido</label>
-                    <input style="margin: 0;" class="btn primary shadow-1" type="submit" value="Envíar">
+                    <input class="btn primary shadow-1" type="submit" value="Envíar">
                 </form>
                 <img src="./assets/img/formImg.svg" alt="">
             </div>
@@ -259,6 +266,17 @@
             <img src="./assets/img/RDTEXT.png" alt="">
         </div>
     </footer>
+    <div class="thanks">
+        <div class="thanks-card">
+            <img id="close-thanks" src="./assets/icons/closeGrey.svg" alt="">
+            <div class="content">
+                <h2>!Muchas gracias!</h2>
+                <h5>Estoy muy feliz de recibir tu mensaje,<br>
+                    pronto sabrás de mí 😉</h5>
+                <img src="/assets/img/thanks.svg" alt="">
+            </div>
+        </div>
+    </div>
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/modules/menu.js"></script>
 </body>
