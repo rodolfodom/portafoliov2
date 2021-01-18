@@ -578,6 +578,35 @@ small {
   }
 }
 
+/* *** modal projects*** */
+.slider {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.slides {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
 /* ***skills section*** */
 
 .skills .content > img {

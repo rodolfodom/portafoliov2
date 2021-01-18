@@ -7,7 +7,7 @@ export function formValidation() {
         regexp = new RegExp(pattern);
 
       if (e.target.value == "") {
-        e.target.nextElementSibling.textContent = "Éste campo es obligatorio";
+        e.target.nextElementSibling.textContent = "Este campo es obligatorio";
         e.target.nextElementSibling.style.display = "block";
       } else if (!regexp.test(e.target.value)) {
         e.target.nextElementSibling.textContent = e.target.title;
