@@ -4,7 +4,7 @@ const d = document,
 let $template = d.getElementById("project-template").content,
   $fragment = d.createDocumentFragment();
 
-export function renderProjects() {
+export async function renderProjects() {
   for (let i = 0; i < PROJECTS.length; i++) {
     let base = PROJECTS[i];
     $template.querySelector(".project-card").dataset.href = base.pageLink;
@@ -18,11 +18,4 @@ export function renderProjects() {
     $fragment.appendChild(clone);
   }
   $container.appendChild($fragment);
-  let $projectsCards = d.querySelectorAll(".project-card aside");
-
-  for (let i = 0; i < $projectsCards.length; i++) {
-    $projectsCards[i].addEventListener("click", (e) => {
-      open($projectsCards[i].parentElement.dataset.href, "_blank");
-    });
-  }
 }

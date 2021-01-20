@@ -579,32 +579,76 @@ small {
 }
 
 /* *** modal projects*** */
-.slider {
-  width: 100%;
-  height: 80vh;
+
+.project-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  backdrop-filter: blur(2px);
+  padding-bottom: calc(var(--header-width));
+  transition: opacity 0.5s ease;
+}
+
+.modal-container {
+  max-width: 800px;
+  height: 90vh;
+  background-color: rgba(252, 252, 252, 0.75);
+  box-shadow: 1px 4px 15px 2px rgba(57, 57, 57, 0.25);
+}
+
+.close-modal {
+  margin-left: calc(100% - 40px);
+}
+
+.modal-content {
   position: relative;
+  height: 100%;
+}
+
+.slider {
+  position: relative;
+  height: calc(45% - 25px);
+}
+
+.slider-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  padding: 0 0.5rem;
 }
 
 .slides {
-  position: relative;
   width: 100%;
-  height: 80vh;
+  height: 100%;
+  position: relative;
 }
 
 .slide {
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 1;
-  visibility: hidden;
-  transition: opacity 0.5s ease-out;
 }
 
 .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 50%;
+}
+
+.project-modal-info {
+  padding: 0.5rem 1rem;
+  height: calc(55% - 20px);
+  overflow-y: scroll;
 }
 
 /* ***skills section*** */
