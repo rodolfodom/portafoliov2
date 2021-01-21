@@ -448,6 +448,7 @@ small {
 .hidden {
   opacity: 0;
   visibility: hidden;
+  transition: opacity 1s ease-out;
 }
 
 /* ***************** Site style ****************** */
