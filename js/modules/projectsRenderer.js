@@ -13,6 +13,7 @@ export async function renderProjects() {
     $template.querySelector(
       "article"
     ).style.backgroundImage = `url(${base.mainImg})`;
+    $template.querySelector("article aside").dataset.index = i;
 
     let clone = d.importNode($template, true);
     $fragment.appendChild(clone);

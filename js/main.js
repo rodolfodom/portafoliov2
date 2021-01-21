@@ -5,7 +5,7 @@ import { menu } from "./modules/menu.js";
 import { showProjectDescription } from "./modules/projectsDescription.js";
 import { renderProjects } from "./modules/projectsRenderer.js";
 import { socialmediaRedirect } from "./modules/socialmediaLinks.js";
-import { openProjectModal } from "./modules/projectModal.js";
+import { projectModal } from "./modules/projectModal.js";
 
 const d = document;
 
@@ -17,5 +17,5 @@ d.addEventListener("DOMContentLoaded", async (e) => {
   socialmediaRedirect();
   await renderProjects();
   showProjectDescription();
-  openProjectModal();
+  projectModal();
 });
